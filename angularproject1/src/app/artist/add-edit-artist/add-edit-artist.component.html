@@ -1,0 +1,10 @@
+<form>
+
+  <div class="mb-3">
+    <label for="artistName" class="form-label">Artist Name</label>
+    <input type="text" class="form-control" [(ngModel)]="artistName" name="artistName" id="artistName">
+  </div>
+
+  <button (click)="addArtist()" *ngIf="artist.id==0" class="btn btn-primary">Add</button>
+  <button (click)="updateArtist()" *ngIf="artist.id!=0" class="btn btn-primary">Update</button>
+</form>

@@ -1,0 +1,10 @@
+<form>
+
+  <div class="mb-3">
+    <label for="genreName" class="form-label">Genre Name</label>
+    <input type="text" class="form-control" [(ngModel)]="genreName" name="genreName" id="genreName">
+  </div>
+
+  <button (click)="addGenre()" *ngIf="genre.id==0" class="btn btn-primary">Add</button>
+  <button (click)="updateGenre()" *ngIf="genre.id!=0" class="btn btn-primary">Update</button>
+</form>

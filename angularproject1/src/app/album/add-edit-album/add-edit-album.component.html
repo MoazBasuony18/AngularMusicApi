@@ -1,0 +1,33 @@
+<form>
+
+  <div class="mb-3">
+    <label for="albumName" class="form-label">Album Name</label>
+    <input type="text" class="form-control" [(ngModel)]="albumName" name="albumName" id="albumName">
+  </div>
+
+  <div class="mb-3">
+    <label for="dataReleased" class="form-label">Data Released</label>
+      <input type="text" class="form-control" [(ngModel)]="dateReleased" name="dataReleased" id="dataReleased">
+  </div>
+
+  <div class="mb-3">
+    <label for="artistId" class="form-label">Artist</label>
+    <input type="text" class="form-control" name="artistId" [(ngModel)]="artistId" *ngIf="album.id!=0" >
+    <select class="form-control" name="artistId" id="artistId" [(ngModel)]
+      ="artistId" *ngIf="album.id==0">
+      <option *ngFor="let type of artistsList$|async" [value]="type.id">{{type.artistName}}</option>
+    </select>
+  </div>
+
+  <div class="mb-3">
+  <label for="genreId" class="form-label">Album Genre</label>
+    <input type="text" class="form-control" name="genreId" [(ngModel)]="genreId" *ngIf="album.id!=0" >
+    <select class="form-control" name="genreId" id="genreId" [(ngModel)]
+    ="genreId" *ngIf="album.id==0">
+    <option *ngFor="let type of genresList$|async" [value]="type.id">{{type.genreName}}</option>
+  </select>
+  </div>
+
+  <button (click)="addAlbum()" *ngIf="album.id==0" class="btn btn-primary">Add</button>
+  <button (click)="updateAlbum()" *ngIf="album.id!=0" class="btn btn-primary">Update</button>
+</form>

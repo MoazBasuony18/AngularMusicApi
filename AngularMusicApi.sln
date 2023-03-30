@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "angularproject1", "angularproject1\angularproject1.esproj", "{AA7C5492-29F8-4D3E-A018-1C68CA75D21E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA7C5492-29F8-4D3E-A018-1C68CA75D21E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA7C5492-29F8-4D3E-A018-1C68CA75D21E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA7C5492-29F8-4D3E-A018-1C68CA75D21E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{AA7C5492-29F8-4D3E-A018-1C68CA75D21E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA7C5492-29F8-4D3E-A018-1C68CA75D21E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA7C5492-29F8-4D3E-A018-1C68CA75D21E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7C7FCAB-9816-45C4-9CEF-391926A42710}
+	EndGlobalSection
+EndGlobal
